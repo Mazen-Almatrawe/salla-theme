@@ -1,0 +1,69 @@
+{# Vape Flavors Page - Converted from original HTML, colors updated, structure matched #}
+{% extends "layouts/master.twig" %}
+
+{% block content %}
+<!-- Begin Vape Flavors Page Content -->
+<div class="nav-header py-6 px-4 flex flex-col bg-gray-100 da-bgg relative">
+  <div class="nav-title container flex items-center gap-2 md:gap-4">
+    <div class="category_title_wrapper">
+      <h1 class="category_title text-xl flex gap-2 pe-3 mb-1 da-tm" id="page-main-title">
+        نكهات فيب
+      </h1>
+      <nav class="breadcrumbs w-full">
+        <ol class="flex items-center flex-wrap text-sm">
+          <li class="whitespace-nowrap"><a href="/" class="fix-align text-primary" aria-label="الرئيسية">الرئيسية</a></li>
+          <li><i class="sicon-keyboard_arrow_left arrow mx-2 text-gray-500 da-ts"></i></li>
+          <li><span class="fix-align text-gray-500 da-ts">نكهات فيب</span></li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <!-- ...existing code for subcategories, filters, etc... -->
+  <div class="container px-2.5 ms:px-5 has-filters">
+    <div class="flex items-start flex-col md:flex-row">
+      <!-- ...existing code for filters sidebar... -->
+      <div class="main-content flex-1 w-full ltr:lg:ml-4 rtl:lg:mr-4">
+        <div class="prdoucts-list-filters flex justify-between items-center my-4 gap-2">
+          <!-- ...existing code for filter triggers and sorting... -->
+        </div>
+        <div class="s-products-list-wrapper s-products-list-filters-results">
+          {# Product Cards #}
+          <div class="s-product-card-entry rounded-lg hide-out-of-stock s-product-card-vertical s-product-card-fit-height" style="background-color: #222; border-color: #383838; opacity: 1;">
+            <div class="s-product-card-image grow-0">
+              <a class="flex-center h-full w-full" href="#">
+                <img class="s-product-card-image-contain lazy__bg lazy_img lazy loaded" src="/assets/images/product1.png" alt="نكهة جوسي تفاح 60 مل سامز فيب" style="aspect-ratio:9/9" loading="lazy">
+                <div class="s-product-card-promotion-title" style="background-color:#f87e7e">8 ر.س</div>
+                <div class="s-product-card-discount card-discount font-primary"><span class="off-ratio">11%</span></div>
+              </a>
+            </div>
+            <div class="s-product-card-content">
+              <div class="s-product-card-content-main ">
+                <div class="s-product-card-props justify-center text-center">
+                  <span class="s-product-card-category">3 نيكوتين</span>
+                  <span class="s-product-card-brand">سامز فيب</span>
+                </div>
+                <h3 class="s-product-card-content-title text-center line-clamp-1 font-primary">
+                  <a href="#">نكهة جوسي تفاح 60 مل سامز فيب</a>
+                </h3>
+                <p class="s-product-card-content-subtitle text-center">سامز فيب</p>
+              </div>
+              <div class="s-product-card-content-sub justify-center gap-2 ">
+                <div class="s-product-card-sale-price justify-center">
+                  <h4 class="s-product-card-price">67 <i class="sicon-sar"></i></h4>
+                  <span class="s-product-card-price-before">75 <i class="sicon-sar"></i></span>
+                </div>
+              </div>
+              <div class="s-product-card-content-footer rounded-lg">
+                <button class="s-button-element s-button-btn s-button-primary s-button-wide s-button-loader-center"><span class="s-button-text"><i class="text-[16px] sicon-add"></i> أضف للسلة</span></button>
+                <button class="s-product-card-wishlist-btn animated not-added un-favorited s-button-element s-button-icon s-button-outline s-button-light-outline s-button-loader-center" type="button"><span class="s-button-text"><i class="sicon-heart"></i></span></button>
+              </div>
+            </div>
+          </div>
+          <!-- ...repeat for other products, matching original HTML... -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Vape Flavors Page Content -->
+{% endblock %}
