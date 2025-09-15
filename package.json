@@ -1,0 +1,11 @@
+{
+  "name":"src",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "salla theme serve",
+    "build": "salla theme build"
+  },
+  "dependencies": {
+    "@salla.sa/cli": "^3.2.4"
+  }
+}
